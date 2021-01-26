@@ -1,9 +1,10 @@
 import random
 import time
-dosya = open("C:\\Users\\LENOVO\\.Origin\\Şİfreniz.txt","a")
-#Kütüphaneleri Elledik#
-#--------------------------------------------#
+dosya = open("◆.txt","a") # ("◆.txt","a"); ◆ yerine bir adet metin belgesi kısa yolu yapıştırın 
+#Örnek ("C:\\Users\\LENOVO\\.Origin\\Şİfreniz.txt","a")
+
 işkem = ["q", "w", "e", "r", "t", "y", "u", "ı", "o", "p", "ğ", "ü", "a", "s", "d", "f", "g", "h", "j", "k", "l", "ş", "i", "z", "x", "c", "v", "b", "n", "m", "ö", "ç", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Ğ", "Ü", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Ş", "İ", "Z", "X", "C", "V", "B", "N", "M", "Ö", "Ç", "!", "^", "+", "%", "&", "/", "(", ")", "=", "?", "_", "-"]
+#Şifremizde olabilcek karakterleri girdik#
 
 print("---Otomatik Şifre yapıcı---")
 time.sleep(3)
@@ -11,7 +12,7 @@ print("\n \n \n \n \n")
 print("Lütfen Şİfre uzunluğu girin")
 print("min. 8, max. 20 olabilir")
 uzun = input(">>>")
-
+#Şİfre uzunluğumuzu giriyoruz#
 print("Şifre hazırlanıyor")
 i = 0
 #-------------------------------#
