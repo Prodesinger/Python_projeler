@@ -1,7 +1,8 @@
 import random
 import time
-dosya = open("◆.txt","a") # ("◆.txt","a"); ◆ yerine bir adet metin belgesi kısa yolu yapıştırın 
-#Örnek ("C:\\Users\\LENOVO\\.Origin\\Şİfreniz.txt","a")
+dosya = open("◆.txt","a") 
+# ("◆.txt","a"); ◆ yerine bir adet metin belgesi kısa yolu yapıştırın #
+#Örnek ("C:\\Users\\LENOVO\\.Origin\\Şİfreniz.txt","a") #
 
 işkem = ["q", "w", "e", "r", "t", "y", "u", "ı", "o", "p", "ğ", "ü", "a", "s", "d", "f", "g", "h", "j", "k", "l", "ş", "i", "z", "x", "c", "v", "b", "n", "m", "ö", "ç", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Ğ", "Ü", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Ş", "İ", "Z", "X", "C", "V", "B", "N", "M", "Ö", "Ç", "!", "^", "+", "%", "&", "/", "(", ")", "=", "?", "_", "-"]
 #Şifremizde olabilcek karakterleri girdik#
@@ -13,6 +14,7 @@ print("Lütfen Şİfre uzunluğu girin")
 print("min. 8, max. 20 olabilir")
 uzun = input(">>>")
 #Şİfre uzunluğumuzu giriyoruz#
+
 print("Şifre hazırlanıyor")
 i = 0
 #-------------------------------#
@@ -80,6 +82,9 @@ if uzun == "20":
     for i in range(20):
         index = random.choice(işkem)
         dosya.write(str(index))
+if uzun > 20 or uzun <0:
+    print("Bu uzunlukta şifre yapmak akla zarar. Tekrar başlat.")
+    time.sleep(100000)
 dosya.write("----------------------------------")
 dosya.close()
 for ı in range(100):
