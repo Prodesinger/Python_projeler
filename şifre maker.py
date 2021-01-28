@@ -15,7 +15,7 @@ print("min. 8, max. 20 olabilir")
 uzun = input(">>>")
 #Şİfre uzunluğumuzu giriyoruz#
 
-print("Şifre hazırlanıyor")
+
 i = 0
 #-------------------------------#
 if uzun == "8" :
@@ -82,9 +82,12 @@ if uzun == "20":
     for i in range(20):
         index = random.choice(işkem)
         dosya.write(str(index))
-if uzun > 20 or uzun <0:
+
+if float(uzun) > 20 or float(uzun) <0:
     print("Bu uzunlukta şifre yapmak akla zarar. Tekrar başlat.")
-    time.sleep(100000)
+    exit()
+
+print("Şifre hazırlanıyor")
 dosya.write("----------------------------------")
 dosya.close()
 for ı in range(100):
